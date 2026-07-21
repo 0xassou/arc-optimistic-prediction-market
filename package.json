@@ -1,0 +1,29 @@
+{
+  "name": "arc-optimistic-prediction-market",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "description": "A parimutuel prediction market with optimistic-oracle resolution (propose -> dispute -> finalize/arbitrate) — a free, forkable alternative to a paid oracle, built for Arc.",
+  "keywords": [
+    "arc",
+    "solidity",
+    "smart-contract",
+    "prediction-market",
+    "optimistic-oracle",
+    "hardhat"
+  ],
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:arc": "hardhat run scripts/deploy.js --network arcTestnet",
+    "deploy:local": "hardhat run scripts/deploy.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.10",
+    "dotenv": "^16.4.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
